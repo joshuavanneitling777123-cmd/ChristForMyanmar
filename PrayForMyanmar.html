@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Christ for Myanmar — Josiah Mawia's ministry sharing the Gospel across Myanmar. Evangelism, discipleship, and church planting in unreached areas." />
+  <meta name="keywords" content="Myanmar missions, Burma evangelism, Josiah Mawia, Christ for Myanmar, Asian missions, tribal ministry" />
+  
+  <!-- Open Graph & Social Meta -->
+  <meta property="og:title" content="Christ for Myanmar | Josiah Mawia" />
+  <meta property="og:description" content="Bringing the Gospel to unreached villages in Myanmar through evangelism, discipleship, and church planting." />
+  <meta property="og:image" content="https://christformyanmar.wordpress.com/wp-content/uploads/2024/05/dsc07452-1.jpeg" />
+  <meta property="og:url" content="https://christformyanmar.org" />
+  <meta property="og:type" content="website" />
+  
+  <title>Christ for Myanmar | Josiah Mawia - Missionary to Burma</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✝️</text></svg>">
+
+  <style>
+    :root {
+      /* Color Palette */
+      --primary-blue: #1a365d;
+      --mission-blue: #2c5282;
+      --gold-accent: #d69e2e;
+      --light-gold: #f6ad55;
+      --cream: #fef3c7;
+      --light-bg: #f7fafc;
+      --dark-text: #1a202c;
+      --medium-text: #4a5568;
+      --light-text: #718096;
+      --white: #ffffff;
+      --border-color: #e2e8f0;
+      
+      /* Typography */
+      --font-heading: 'Merriweather', Georgia, serif;
+      --font-body: 'Inter', system-ui, sans-serif;
+      
+      /* Spacing */
+      --section-spacing: 6rem;
+      --card-radius: 12px;
+      --shadow-light: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      --shadow-medium: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      --shadow-large: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+
+    /* Reset & Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-body);
+      line-height: 1.7;
+      color: var(--dark-text);
+      background-color: var(--light-bg);
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5 {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      letter-spacing: -0.5px;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      color: var(--primary-blue);
+      position: relative;
+      display: inline-block;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: var(--gold-accent);
+      border-radius: 2px;
+    }
+
+    h3 {
+      font-size: 1.75rem;
+      color: var(--mission-blue);
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      color: var(--medium-text);
+    }
+
+    a {
+      color: var(--mission-blue);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      color: var(--gold-accent);
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    section {
+      padding: var(--section-spacing) 0;
+      scroll-margin-top: 100px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 1rem 2.5rem;
+      background: linear-gradient(135deg, var(--gold-accent) 0%, var(--light-gold) 100%);
+      color: var(--primary-blue);
+      font-weight: 600;
+      font-size: 1rem;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      box-shadow: var(--shadow-light);
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-medium);
+      color: var(--primary-blue);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      border: 2px solid var(--gold-accent);
+      color: var(--gold-accent);
+    }
+
+    .btn-secondary:hover {
+      background: var(--gold-accent);
+      color: var(--primary-blue);
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+      padding: 1rem 0;
+      transition: all 0.3s ease;
+    }
+
+    header.scrolled {
+      padding: 0.5rem 0;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-icon {
+      font-size: 2rem;
+      color: var(--gold-accent);
+    }
+
+    .logo-text {
+      font-family: var(--font-heading);
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--primary-blue);
+    }
+
+    .logo-text span {
+      color: var(--gold-accent);
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    nav a {
+      font-weight: 600;
+      color: var(--medium-text);
+      position: relative;
+      padding: 0.5rem 0;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--gold-accent);
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after,
+    nav a.active::after {
+      width: 100%;
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: var(--primary-blue);
+      cursor: pointer;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(rgba(26, 54, 93, 0.85), rgba(44, 82, 130, 0.9)), 
+                  url('https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: var(--white);
+      text-align: center;
+      padding: 8rem 1rem;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      margin-bottom: 2rem;
+      color: var(--white);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 3rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* ===== SCRIPTURE HIGHLIGHT ===== */
+    .scripture-highlight {
+      background: linear-gradient(135deg, var(--primary-blue) 0%, var(--mission-blue) 100%);
+      color: var(--white);
+      padding: 4rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .scripture-highlight::before {
+      content: "❝";
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 8rem;
+      opacity: 0.1;
+      font-family: serif;
+    }
+
+    .scripture-highlight::after {
+      content: "❞";
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      font-size: 8rem;
+      opacity: 0.1;
+      font-family: serif;
+    }
+
+    .scripture-text {
+      font-size: 1.5rem;
+      font-style: italic;
+      max-width: 800px;
+      margin: 0 auto 1.5rem;
+      line-height: 1.8;
+      position: relative;
+      z-index: 1;
+    }
+
+    .scripture-reference {
+      font-size: 1.1rem;
+      color: var(--light-gold);
+      font-weight: 600;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ===== ABOUT ===== */
+    .about-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .about-image {
+      position: relative;
+    }
+
+    .about-image img {
+      width: 100%;
+      border-radius: var(--card-radius);
+      box-shadow: var(--shadow-large);
+      transform: rotate(-2deg);
+      transition: transform 0.3s ease;
+    }
+
+    .about-image img:hover {
+      transform: rotate(0deg);
+    }
+
+    .about-image::after {
+      content: '';
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      right: -20px;
+      bottom: -20px;
+      border: 2px solid var(--gold-accent);
+      border-radius: var(--card-radius);
+      z-index: -1;
+    }
+
+    .about-text h2 {
+      margin-bottom: 2rem;
+    }
+
+    .about-text p {
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+    }
+
+    .ministry-focus {
+      background: var(--cream);
+      padding: 2rem;
+      border-radius: var(--card-radius);
+      margin-top: 2rem;
+      border-left: 4px solid var(--gold-accent);
+    }
+
+    .ministry-focus h4 {
+      color: var(--primary-blue);
+      margin-bottom: 1rem;
+    }
+
+    /* ===== VIDEO ===== */
+    .video-section {
+      background: var(--white);
+    }
+
+    .video-container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      overflow: hidden;
+      border-radius: var(--card-radius);
+      box-shadow: var(--shadow-large);
+      background: #000;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .video-placeholder {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, var(--primary-blue) 0%, var(--mission-blue) 100%);
+      color: var(--white);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .video-placeholder svg {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 1.5rem;
+      opacity: 0.8;
+    }
+
+    /* ===== PRAYER REQUEST ===== */
+    .prayer-request {
+      background: linear-gradient(135deg, var(--cream) 0%, #fef9e7 100%);
+    }
+
+    .prayer-form {
+      max-width: 700px;
+      margin: 0 auto;
+      background: var(--white);
+      padding: 3rem;
+      border-radius: var(--card-radius);
+      box-shadow: var(--shadow-medium);
+    }
+
+    .form-group {
+      margin-bottom: 1.75rem;
+    }
+
+    .form-label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: var(--dark-text);
+    }
+
+    .form-input,
+    .form-textarea,
+    .form-select {
+      width: 100%;
+      padding: 1rem;
+      border: 2px solid var(--border-color);
+      border-radius: 8px;
+      font-family: var(--font-body);
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .form-input:focus,
+    .form-textarea:focus,
+    .form-select:focus {
+      outline: none;
+      border-color: var(--gold-accent);
+      box-shadow: 0 0 0 3px rgba(214, 158, 46, 0.1);
+    }
+
+    .form-textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    .form-select {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%231a365d' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      background-size: 16px;
+      padding-right: 3rem;
+    }
+
+    .prayer-note {
+      text-align: center;
+      margin-top: 1.5rem;
+      color: var(--light-text);
+      font-size: 0.9rem;
+    }
+
+    /* ===== PRAYER CARD ===== */
+    .prayer-card-section {
+      background: var(--white);
+    }
+
+    .prayer-card-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .card-preview {
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      padding: 3rem;
+      border-radius: var(--card-radius);
+      box-shadow: var(--shadow-large);
+      position: relative;
+      transform: rotate(-1deg);
+      transition: transform 0.3s ease;
+    }
+
+    .card-preview:hover {
+      transform: rotate(0deg);
+    }
+
+    .card-preview::before {
+      content: 'PRAYER CARD';
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--gold-accent);
+      letter-spacing: 1px;
+    }
+
+    .card-content {
+      text-align: center;
+    }
+
+    .card-content h3 {
+      margin-bottom: 1rem;
+    }
+
+    .card-features {
+      list-style: none;
+      margin: 2rem 0;
+    }
+
+    .card-features li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 0.75rem;
+      color: var(--medium-text);
+    }
+
+    .card-features li::before {
+      content: '✓';
+      color: var(--gold-accent);
+      font-weight: bold;
+    }
+
+    .download-options {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* ===== CONTACT ===== */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2.5rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .contact-card {
+      background: var(--white);
+      padding: 2.5rem;
+      border-radius: var(--card-radius);
+      box-shadow: var(--shadow-medium);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-large);
+    }
+
+    .contact-icon {
+      width: 70px;
+      height: 70px;
+      background: linear-gradient(135deg, var(--gold-accent) 0%, var(--light-gold) 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+      font-size: 1.8rem;
+      color: var(--primary-blue);
+    }
+
+    .contact-info h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-info a {
+      font-weight: 500;
+      font-size: 1.1rem;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--primary-blue);
+      color: var(--white);
+      padding: 4rem 0 2rem;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-section h3 {
+      color: var(--light-gold);
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.8);
+      transition: color 0.3s ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--light-gold);
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.9rem;
+    }
+
+    .footer-verse {
+      font-style: italic;
+      color: var(--light-gold);
+      margin-top: 0.5rem;
+    }
+
+    /* ===== RESPONSIVE DESIGN ===== */
+    @media (max-width: 992px) {
+      h1 {
+        font-size: 3rem;
+      }
+      
+      h2 {
+        font-size: 2.2rem;
+      }
+      
+      .about-content,
+      .prayer-card-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+      
+      .about-image {
+        order: -1;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .mobile-menu-btn {
+        display: block;
+      }
+      
+      nav ul {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        flex-direction: column;
+        padding: 2rem;
+        box-shadow: var(--shadow-medium);
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+      }
+      
+      nav ul.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+      }
+      
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      
+      .hero p {
+        font-size: 1.1rem;
+      }
+      
+      .prayer-form {
+        padding: 2rem;
+      }
+      
+      section {
+        padding: 4rem 0;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .container {
+        padding: 0 1.5rem;
+      }
+      
+      h1 {
+        font-size: 2.2rem;
+      }
+      
+      h2 {
+        font-size: 1.8rem;
+      }
+      
+      .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .btn {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in {
+      animation: fadeInUp 0.6s ease forwards;
+    }
+
+    .stagger-delay-1 { animation-delay: 0.1s; }
+    .stagger-delay-2 { animation-delay: 0.2s; }
+    .stagger-delay-3 { animation-delay: 0.3s; }
+    .stagger-delay-4 { animation-delay: 0.4s; }
+
+    /* ===== LOADING ===== */
+    .loading {
+      opacity: 0;
+    }
+
+    .loaded {
+      opacity: 1;
+      transition: opacity 0.5s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="main-header">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <div class="logo-icon">✝️</div>
+        <div class="logo-text">Christ for <span>Myanmar</span></div>
+      </a>
+      
+      <button class="mobile-menu-btn" id="menu-btn">☰</button>
+      
+      <nav>
+        <ul id="nav-menu">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About Josiah</a></li>
+          <li><a href="#video">Ministry Video</a></li>
+          <li><a href="#prayer">Prayer Requests</a></li>
+          <li><a href="#card">Prayer Card</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="container hero-content fade-in">
+      <h1>Christ for Myanmar</h1>
+      <p class="fade-in stagger-delay-1">Bringing the light of the Gospel to unreached villages in Myanmar through evangelism, discipleship, and church planting.</p>
+      <div class="hero-buttons fade-in stagger-delay-2">
+        <a href="#about" class="btn">Learn My Story</a>
+        <a href="#prayer" class="btn btn-secondary">Request Prayer</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCRIPTURE HIGHLIGHT -->
+  <div class="scripture-highlight">
+    <div class="container">
+      <p class="scripture-text">"How then shall they call on him in whom they have not believed? And how shall they believe in him of whom they have not heard? And how shall they hear without a preacher?"</p>
+      <p class="scripture-reference">Romans 10:14 (KJV)</p>
+    </div>
+  </div>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title fade-in">About Josiah Mawia</h2>
+      <div class="about-content">
+        <div class="about-text fade-in stagger-delay-1">
+          <p><strong>My name is Josiah Mawia</strong>, born and raised in Myanmar (Burma). I was adopted by missionary evangelist parents who faithfully taught me the Scriptures from childhood.</p>
+          <p>I placed my faith in Christ at a young age and was mentored by my father, who recognized and nurtured God's call to ministry in my life.</p>
+          <p>Today, I travel throughout Myanmar's tribal regions, sharing the Gospel in villages that have never heard the name of Jesus, training local believers, and planting churches among unreached people groups.</p>
+          
+          <div class="ministry-focus fade-in stagger-delay-2">
+            <h4>Ministry Focus Areas:</h4>
+            <p>• Tribal evangelism in Chin, Kachin, and Shan states<br>
+               • Discipleship training for new believers<br>
+               • Church planting in unreached villages<br>
+               • Humanitarian aid alongside Gospel proclamation</p>
+          </div>
+        </div>
+        
+        <div class="about-image fade-in stagger-delay-3">
+          <img 
+            src="https://christformyanmar.wordpress.com/wp-content/uploads/2024/05/dsc07452-1.jpeg" 
+            alt="Josiah Mawia sharing the Gospel in Myanmar"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MINISTRY VIDEO -->
+  <section id="video" class="video-section">
+    <div class="container">
+      <h2 class="section-title fade-in">Ministry in Action</h2>
+      <div class="video-container fade-in stagger-delay-1">
+        <div class="video-wrapper">
+          <!-- Replace with actual YouTube embed code -->
+          <!-- <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe> -->
+          
+          <div class="video-placeholder">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" stroke-width="1.5"/>
+              <polygon points="10,15 15,12 10,9" stroke-width="1.5" fill="currentColor"/>
+            </svg>
+            <h3>Ministry Video Coming Soon</h3>
+            <p>Watch footage from recent evangelism trips and testimonies from believers in Myanmar's tribal regions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRAYER REQUEST -->
+  <section id="prayer" class="prayer-request">
+    <div class="container">
+      <h2 class="section-title fade-in">Submit a Prayer Request</h2>
+      <div class="prayer-form fade-in stagger-delay-1">
+        <form id="prayer-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-group">
+            <label for="name" class="form-label">Name (Optional)</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Your name">
+          </div>
+          
+          <div class="form-group">
+            <label for="email" class="form-label">Email (Optional)</label>
+            <input type="email" id="email" name="_replyto" class="form-input" placeholder="email@example.com">
+          </div>
+          
+          <div class="form-group">
+            <label for="request" class="form-label">Prayer Request *</label>
+            <textarea id="request" name="prayer_request" class="form-textarea" placeholder="Please share your prayer need..." required></textarea>
+          </div>
+          
+          <div class="form-group">
+            <label for="category" class="form-label">Prayer Category</label>
+            <select id="category" name="category" class="form-select">
+              <option value="personal">Personal Need</option>
+              <option value="family">Family Matter</option>
+              <option value="health">Health & Healing</option>
+              <option value="ministry">Ministry Related</option>
+              <option value="thanksgiving">Thanksgiving/Praise</option>
+              <option value="urgent">Urgent Need</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label">
+              <input type="checkbox" name="share_publicly" value="yes">
+              You may share this request (anonymously) with our prayer team
+            </label>
+          </div>
+          
+          <button type="submit" class="btn" style="width: 100%;">
+            <span>Submit for Prayer</span>
+          </button>
+          
+          <p class="prayer-note">All requests are kept confidential and prayed over daily by Josiah and our ministry team.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRAYER CARD -->
+  <section id="card" class="prayer-card-section">
+    <div class="container">
+      <h2 class="section-title fade-in">Prayer & Support Card</h2>
+      <div class="prayer-card-container">
+        <div class="card-preview fade-in stagger-delay-1">
+          <div class="card-content">
+            <h3>Josiah Mawia</h3>
+            <p><em>Missionary to Myanmar</em></p>
+            <div class="card-features">
+              <li>Key prayer points for 2025</li>
+              <li>Current ministry locations map</li>
+              <li>Scripture promises for missions</li>
+              <li>Upcoming evangelism trips</li>
+              <li>Contact & support information</li>
+            </div>
+            <p style="color: var(--gold-accent); font-weight: 600;">"Pray that the Lord's message may spread rapidly and be honored"<br>— 2 Thessalonians 3:1</p>
+          </div>
+        </div>
+        
+        <div class="card-info fade-in stagger-delay-2">
+          <h3>Download Prayer Resources</h3>
+          <p>Our printable prayer card is designed for individuals, families, and churches to pray specifically for the ministry in Myanmar.</p>
+          
+          <div class="download-options">
+            <a href="#" class="btn" id="download-pdf">
+              <span>📄 Download PDF</span>
+            </a>
+            <a href="#" class="btn btn-secondary" id="view-online">
+              <span>👁️ View Online</span>
+            </a>
+          </div>
+          
+          <p style="margin-top: 2rem; font-style: italic; color: var(--light-text);">"The effective, fervent prayer of a righteous man avails much." — James 5:16</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title fade-in">Contact & Connect</h2>
+      <div class="contact-grid">
+        <div class="contact-card fade-in stagger-delay-1">
+          <div class="contact-icon">📧</div>
+          <div class="contact-info">
+            <h3>Email Josiah</h3>
+            <p><a href="mailto:josiah@christformyanmar.org">josiah@christformyanmar.org</a></p>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">For ministry inquiries, speaking invitations, or personal correspondence</p>
+          </div>
+        </div>
+        
+        <div class="contact-card fade-in stagger-delay-2">
+          <div class="contact-icon">📍</div>
+          <div class="contact-info">
+            <h3>Ministry Base</h3>
+            <p>Yangon, Myanmar</p>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">Currently ministering in tribal regions across Myanmar</p>
+          </div>
+        </div>
+        
+        <div class="contact-card fade-in stagger-delay-3">
+          <div class="contact-icon">🙏</div>
+          <div class="contact-info">
+            <h3>Prayer Updates</h3>
+            <p>Monthly Newsletter</p>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">Receive regular updates and specific prayer needs from the field</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Christ for Myanmar</h3>
+          <p>Bringing the Gospel to unreached people in Myanmar through evangelism, discipleship, and church planting.</p>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Josiah</a></li>
+            <li><a href="#video">Ministry Video</a></li>
+            <li><a href="#prayer">Prayer Requests</a></li>
+            <li><a href="#card">Prayer Card</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Connect</h3>
+          <ul class="footer-links">
+            <li><a href="mailto:josiah@christformyanmar.org">Email</a></li>
+            <li><a href="#newsletter">Newsletter Signup</a></li>
+            <li><a href="#support">Support the Ministry</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© 2025 Christ for Myanmar • All glory to Jesus Christ</p>
+        <p class="footer-verse">"…so that in all things He might have the supremacy." — Colossians 1:18</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // DOM Ready
+    document.addEventListener('DOMContentLoaded', function() {
+      // Mobile Menu Toggle
+      const menuBtn = document.getElementById('menu-btn');
+      const navMenu = document.getElementById('nav-menu');
+      
+      menuBtn.addEventListener('click', function() {
+        navMenu.classList.toggle('active');
+        menuBtn.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+      });
+      
+      // Close menu when clicking a link
+      document.querySelectorAll('#nav-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('active');
+          menuBtn.textContent = '☰';
+        });
+      });
+      
+      // Header scroll effect
+      const header = document.getElementById('main-header');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 100) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+      
+      // Active nav link highlighting
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('#nav-menu a');
+      
+      window.addEventListener('scroll', function() {
+        let current = '';
+        
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          
+          if (scrollY >= (sectionTop - 150)) {
+            current = section.getAttribute('id');
+          }
+        });
+        
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href').substring(1) === current) {
+            link.classList.add('active');
+          }
+        });
+      });
+      
+      // Form submission handling
+      const prayerForm = document.getElementById('prayer-form');
+      prayerForm.addEventListener('submit', function(e) {
+        if (prayerForm.action.includes('YOUR_FORM_ID')) {
+          e.preventDefault();
+          alert('⚠️ To enable the prayer request form:\n\n1. Go to https://formspree.io\n2. Create a free account\n3. Get your form endpoint\n4. Replace "YOUR_FORM_ID" in the HTML with your actual Formspree ID\n\nThis will allow you to receive prayer requests via email!');
+          return false;
+        }
+        
+        // Show success message
+        const submitBtn = prayerForm.querySelector('button[type="submit"]');
+        const originalText = submitBtn.innerHTML;
+        submitBtn.innerHTML = '<span>✅ Submitted! Thank you</span>';
+        submitBtn.style.background = '#10b981';
+        
+        setTimeout(() => {
+          submitBtn.innerHTML = originalText;
+          submitBtn.style.background = '';
+        }, 3000);
+      });
+      
+      // Download button functionality
+      document.getElementById('download-pdf').addEventListener('click', function(e) {
+        e.preventDefault();
+        alert('📄 Prayer card PDF download would start here.\n\nReplace # with actual PDF URL when ready.');
+      });
+      
+      document.getElementById('view-online').addEventListener('click', function(e) {
+        e.preventDefault();
+        alert('👁️ Online prayer card viewer would open here.');
+      });
+      
+      // Fade-in animations on scroll
+      const fadeElements = document.querySelectorAll('.fade-in');
+      
+      const fadeObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('loaded');
+            fadeObserver.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      });
+      
+      fadeElements.forEach(element => {
+        fadeObserver.observe(element);
+      });
+      
+      // Smooth scroll for all anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+      
+      // Newsletter signup simulation
+      const newsletterLinks = document.querySelectorAll('a[href="#newsletter"]');
+      newsletterLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const email = prompt('Enter your email to receive monthly ministry updates:');
+          if (email) {
+            alert(`Thank you! ${email} has been added to our prayer update list.`);
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
